@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+:root {
+    /* Warna primer */
+    --spicy-red: #ac4218;
+    --chicken-yellow: #FFC107;
+  
+    /* Warna sekunder */
+    --grilled-chicken-brown: #6E2C00;
+    --leafy-green: #27AE60;
+  
+    /* Warna aksen */
+    --white: #FFFFFF;
+    --black: #2C3E50;
+  
+    /* Warna latar belakang dan teks utama */
+    --background-color: #F39C12;
+    --text-color: #2C3E50;
+  }
+header{
+    z-index: 1000;
+
+}
+.top-bar{
+    background: #853312;
+    font-size: 14px;
+}
+.carousel-item img{
+    height: 10%;
+}
+.top-bar
+.navbar-brand,
+.navbar-nav .nav-item .nav-link 
+{
+    color: var(--white);
+    font-weight: 400;
+}
+.navbar-nav .nav-item .nav-link .active
+{
+    color: var(--chicken-yellow);
+}
+a.btn-outline-warning{
+    font-weight: 500;
+}
+a.btn-outline-warning:hover{
+  color: var(--text-color);
+}
+.bottom-bar{
+    background: var(--spicy-red);
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background: var(--white);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+.nav-button-left{
+    display: none;
+}
+
+.active{
+    color: var(--chicken-yellow);
+}
+/* Color of 3 lines */
+
+@media screen and (max-width: 992px){
+    .nav-button-left{
+        display: block;
+    }
+    .nav-button-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+
+}
+.glightbox{
+  z-index: 1000000000000;
+}
+/*--------------------------------------------------------------
+# Menu Section
+--------------------------------------------------------------*/
+.menu .nav-tabs {
+    border: 0;
+  }
+  
+  .menu .nav-link {
+    margin: 0 10px;
+    padding: 10px 5px;
+    transition: 0.3s;
+    color: var(--color-secondary);
+    border-radius: 0;
+    cursor: pointer;
+    height: 100%;
+    border: 0;
+    border-bottom: 2px solid #b6b6bf;
+  }
+  
+  @media (max-width: 575px) {
+    .menu .nav-link {
+      margin: 0 10px;
+      padding: 10px 0;
+    }
+  }
+  
+  .menu .nav-link i {
+    padding-right: 15px;
+    font-size: 48px;
+  }
+  
+  .menu .nav-link h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    font-family: var(--font-secondary);
+  }
+  
+  @media (max-width: 575px) {
+    .menu .nav-link h4 {
+      font-size: 16px;
+    }
+  }
+  
+  .menu .nav-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .menu .nav-link.active {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  
+  .menu .tab-content .tab-header {
+    padding: 30px 0;
+  }
+  
+  .menu .tab-content .tab-header p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #676775;
+    margin-bottom: 0;
+  }
+  
+  .menu .tab-content .tab-header h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--spicy-red);
+  }
+  
+  .menu .tab-content .menu-item {
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+  
+  .menu .tab-content .menu-item .menu-img {
+    padding: 0 60px;
+    margin-bottom: 15px;
+  }
+  
+  .menu .tab-content .menu-item h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    font-weight: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .menu .tab-content .menu-item .ingredients {
+    font-family: var(--font-secondary);
+    color: #8d8d9b;
+    margin-bottom: 5px;
+  }
+  
+  .menu .tab-content .menu-item .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
