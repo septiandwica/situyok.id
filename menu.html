@@ -90,29 +90,6 @@
         </header>
         <section id="hero">
             <div class="wrapper">
-                <div
-                    id="carouselExampleDark"
-                    class="carousel carousel-fade h-25  slide"
-                    data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button
-                            type="button"
-                            data-bs-target="#carouselExampleDark"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                            aria-label="Slide 1"></button>
-                        <button
-                            type="button"
-                            data-bs-target="#carouselExampleDark"
-                            data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button
-                            type="button"
-                            data-bs-target="#carouselExampleDark"
-                            data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
                     <div class="carousel-inner ">
                         <div class="carousel-item active" data-bs-interval="2500">
                             <img
@@ -120,41 +97,14 @@
                                 class="d-block w-100"
                                 alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img
-                                src="./src/img/AYAM SAUS BBQ - HOME BANNER.jpg"
-                                class="d-block w-100"
-                                alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="./src/img/PAKET-NAMPOL-NEW---HOME-BANNER.jpg"
-                                class="d-block w-100"
-                                alt="...">
-                        </div>
                     </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselExampleDark"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselExampleDark"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    
                 </div>
             </div>
 
         </section>
         <main>
-            <section id="menu" class="menu mt-5 mb-5">
+            <section id="menu" class="menu mt-5">
                 <div class="container " data-aos="fade-up">
                     <div class="content " id="maincontent">
                         <div class="section-header text-center mb-4">
@@ -163,9 +113,49 @@
                                 <span>Spesial Kami</span></p>
                         </div>
 
-                        <div class="tab-content mt-2 " data-aos="fade-up" data-aos-delay="300">
+                        <ul class="nav nav-tabs d-flex justify-content-center">
 
-                            <div class="tab-pane fade active show">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active show"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#menu-paket">
+                                    <h4>Paket</h4>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-ayam">
+                                    <h4>Ayam</h4>
+                                </a>
+
+                            <li >
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-bebek">
+                                    <h4>Bebek</h4>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-tambahan">
+                                    <h4>Tambahan</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-minuman">
+                                  <h4>Minuman</h4>
+                              </a>
+                          </li>
+
+                        </ul>
+
+                        <div class="tab-content mt-2" data-aos="fade-up" data-aos-delay="300">
+
+                            <div class="tab-pane fade active show" id="menu-paket">
+
+                                <div class="tab-header text-center mb-2">
+                                    <p>Menu</p>
+                                    <h3>Paket</h3>
+                                </div>
 
                                 <div class="row gy-5 justify-content-center ">
 
@@ -177,6 +167,9 @@
                                         <h4>Paket Nasi Ayam Goreng</h4>
                                         <p class="ingredients">
                                             Nasi + Ayam Goreng + Sambal(Colet terasi, Rica kemangi, Sampedas) *
+                                        </p>
+                                        <p class="price">
+                                            Rp. 25.000
                                         </p>
                                     </div>
                                     <!-- Menu Item -->
@@ -190,6 +183,9 @@
                                         <p class="ingredients">
                                             Nasi + Ayam Bakar + Sambal(Colet terasi, Rica kemangi, Sampedas) *
                                         </p>
+                                        <p class="price">
+                                            Rp. 25.000
+                                        </p>
                                     </div>
                                     <!-- Menu Item -->
 
@@ -202,107 +198,219 @@
                                         <p class="ingredients">
                                             Nasi + Bebek Goreng + Sambal(Colet terasi, Rica kemangi, Sampedas) *
                                         </p>
+                                        <p class="price">
+                                            Rp. 35.000
+                                        </p>
                                     </div>
                                     <!-- Menu Item -->
 
                                     <div class="col-lg-4 menu-item">
-                                        <a class="btn btn-outline-danger " href="./menu.html">Menu Lainnya</a>
-
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Paket Nasi Bebek Bakar</h4>
+                                        <p class="ingredients">
+                                            Nasi + Bebek Bakar + Sambal(Colet terasi, Rica kemangi, Sampedas) *
+                                        </p>
+                                        <p class="price">
+                                            Rp. 35.000
+                                        </p>
                                     </div>
                                     <!-- Menu Item -->
 
                                 </div>
                             </div>
 
+                            <div class="tab-pane fade" id="menu-ayam">
+
+                                <div class="tab-header text-center">
+                                    <p>Menu</p>
+                                    <h3>Ayam</h3>
+                                </div>
+
+                                <div class="row gy-5 justify-content-center ">
+
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Paket Ayam Goreng</h4>
+                                        <p class="ingredients">
+                                            Ayam Goreng + Sambal(Colet terasi, Rica kemangi, Sampedas) *
+                                        </p>
+                                        <p class="price">
+                                            Rp. 22.000
+                                        </p>
+                                    </div>
+                                    <!-- Menu Item -->
+
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Paket Ayam Bakar</h4>
+                                        <p class="ingredients">
+                                            Ayam Bakar + Sambal(Colet terasi, Rica kemangi, Sampedas) *
+                                        </p>
+                                        <p class="price">
+                                            Rp. 22.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="menu-bebek">
+
+                                <div class="tab-header text-center">
+                                    <p>Menu</p>
+                                    <h3>Bebek</h3>
+                                </div>
+
+                                <div class="row gy-5 justify-content-center ">
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Paket Ayam Goreng</h4>
+                                        <p class="ingredients">
+                                            Ayam Goreng + Sambal(Colet terasi, Rica kemangi, Sampedas) *
+                                        </p>
+                                        <p class="price">
+                                            Rp. 22.000
+                                        </p>
+                                    </div>
+                                    <!-- Menu Item -->
+
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Paket Ayam Bakar</h4>
+                                        <p class="ingredients">
+                                            Ayam Bakar + Sambal(Colet terasi, Rica kemangi, Sampedas) *
+                                        </p>
+                                        <p class="price">
+                                            Rp. 22.000
+                                        </p>
+                                    </div>
+                                    <!-- Menu Item -->
+                                </div>
+                                <!-- Menu Item -->
+                            </div>
+
+                            <div class="tab-pane fade" id="menu-tambahan">
+
+                                <div class="tab-header text-center">
+                                    <p>Menu</p>
+                                    <h3>Tambahan</h3>
+                                </div>
+
+                                <div class="row gy-5 justify-content-center ">
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Sambal Colet Terasi</h4>
+                                        <p class="price">
+                                            Rp. 5.000
+                                        </p>
+                                    </div>
+                                    <!-- Menu Item -->
+
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Sambal Rica Kemangi</h4>
+                                        <p class="price">
+                                            Rp. 5.000
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Sambal Sampedas</h4>
+                                        <p class="price">
+                                            Rp. 5.000
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Tahu 2 pcs</h4>
+                                        <p class="price">
+                                            Rp. 5.000
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 menu-item">
+                                        <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                            src="./src/img/menusituyok-removebg-preview.png"
+                                            class="menu-img img-fluid"
+                                            alt=""></a>
+                                        <h4>Keripik 1 pcs</h4>
+                                        <p class="price">
+                                            Rp. 10.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="menu-minuman">
+
+                              <div class="tab-header text-center">
+                                  <p>Menu</p>
+                                  <h3>Minuman</h3>
+                              </div>
+
+                              <div class="row gy-5 justify-content-center ">
+                                  <div class="col-lg-4 menu-item">
+                                      <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                          src="./src/img/menusituyok-removebg-preview.png"
+                                          class="menu-img img-fluid"
+                                          alt=""></a>
+                                      <h4>Es Teh</h4>
+                                      <p class="price">
+                                          Rp. 5.000
+                                      </p>
+                                  </div>
+
+                                  <div class="col-lg-4 menu-item">
+                                      <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                          src="./src/img/menusituyok-removebg-preview.png"
+                                          class="menu-img img-fluid"
+                                          alt=""></a>
+                                      <h4>Air Mineral</h4>
+                                      <p class="price">
+                                          Rp. 5.000
+                                      </p>
+                                  </div>
+                                  <div class="col-lg-4 menu-item">
+                                      <a href="./src/img/menusituyok-removebg-preview.png" class="glightbox"><img
+                                          src="./src/img/menusituyok-removebg-preview.png"
+                                          class="menu-img img-fluid"
+                                          alt=""></a>
+                                      <h4>Teh Hangat</h4>
+                                      <p class="price">
+                                          Rp. 5.000
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </section>
-        <section class="social mt-5 mb-5 p-5" id="social">
-            <div class="container-fluid">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-sm-12 p-0 m-0 ">
-                        <img class="img-fluid " src="./src/img/instagram.png" alt="">
-                    </div>
-                    <div class="col-md-6 col-sm-12 text-center">
-                        <h3>
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            Official Instagram</h3>
-                        <a href="">@Situyok.id</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="lokasi" class="lokasi mt-5 mb-5">
-            <div class="container" data-aos="fade-up">
-                <div class="content " id="mapscontent">
-                    <div class="section-header text-center mb-4 ">
-                        <h2>Lokasi</h2>
-                    </div>
-
-                    <div class="mb-3">
-                        <iframe
-                            id="map-iframe"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.9563873123275!2d106.7309637!3d-6.1365622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dfa06ab97cf%3A0x572e80be98c3e467!2sSITUYOK%20Cabang%20Cengkareng%20Palem%20Mutiara!5e0!3m2!1sid!2sid!4v1707148441323!5m2!1sid!2sid"
-                            width="100%"
-                            height="350px"
-                            style="border:0;"
-                            allowfullscreen="allowfullscreen"
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                    <div class="row row-cols-1 row-cols-md-3 g-3" id="card-container">
-                        <div class="col">
-                            <div class="card rounded-0 " onclick="changeIframeSource('source1')">
-                                <div class="card-body">
-                                    <h5 class="card-title">Situyok Cabang Cengkareng Palem Mutiara</h5>
-                                    <p class="card-text">JI. Boulevard Raya No.17A, RT.7/RW.14, Cengkareng Timur,
-                                        Kecamatan Cengkareng, Kota Jakbar, DKI Jakarta, 11730</p>
-                                    <p class="card-phone">
-                                        <i class="fas fa-phone"></i>
-                                        081234567654</p>
-                                    <p class="card-clock">
-                                        <i class="fas fa-clock"></i>
-                                        11.00 - 22.00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card  rounded-0" onclick="changeIframeSource('source2')">
-                                <div class="card-body">
-                                    <h5 class="card-title">Situyok Cabang Cengkareng Palem Mutiara</h5>
-                                    <p class="card-text">JI. Boulevard Raya No.17A, RT.7/RW.14, Cengkareng Timur,
-                                        Kecamatan Cengkareng, Kota Jakbar, DKI Jakarta, 11730</p>
-                                    <p class="card-phone">
-                                        <i class="fas fa-phone"></i>
-                                        081234567654</p>
-                                    <p class="card-clock">
-                                        <i class="fas fa-clock"></i>
-                                        11.00 - 22.00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card  rounded-0" onclick="changeIframeSource('source1')">
-                                <div class="card-body">
-                                    <h5 class="card-title">Situyok Cabang Cengkareng Palem Mutiara</h5>
-                                    <p class="card-text">JI. Boulevard Raya No.17A, RT.7/RW.14, Cengkareng Timur,
-                                        Kecamatan Cengkareng, Kota Jakbar, DKI Jakarta, 11730</p>
-                                    <p class="card-phone">
-                                        <i class="fas fa-phone"></i>
-                                        081234567654</p>
-                                    <p class="card-clock">
-                                        <i class="fas fa-clock"></i>
-                                        11.00 - 22.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </section>
     </main>
@@ -413,7 +521,6 @@
             const topnav = document.getElementById("tnav");
             const botnav = document.getElementById("bnav");
             const content = document.getElementById("maincontent");
-            const maps = document.getElementById("mapscontent");
             function tambahkanKelasResponsif() {
                 var lebarLayar = window.innerWidth;
                 if (lebarLayar > 998) {
@@ -426,9 +533,6 @@
                     content
                         .classList
                         .add('mx-5');
-                    maps
-                        .classList
-                        .add('mx-5');
                 } else {
                     topnav
                         .classList
@@ -437,9 +541,6 @@
                         .classList
                         .remove('mx-5');
                     content
-                        .classList
-                        .remove('mx-5');
-                    maps
                         .classList
                         .remove('mx-5');
 
