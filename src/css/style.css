@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
 }
 :root {
   /* Warna primer */
@@ -22,20 +21,46 @@
   --text-color: #2c3e50;
 }
 
+section,
+footer,
+main {
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   z-index: 1000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+header.opacity0 {
+  transition: opacity 100s ease-in-out;
+  opacity: 0;
+}
+
+header.position-fixed {
+  opacity: 1;
+}
+
+header.position-fixed .bottom-bar {
+  box-shadow: #ac421855 0px 12px 20px;
 }
 .top-bar {
   background: #853312;
   font-size: 14px;
 }
+
 .carousel-item img {
   height: 10%;
 }
 .top-bar .navbar-brand,
 .navbar-nav .nav-item .nav-link {
   color: var(--white);
-  font-weight: 400;
+  font-weight: 500;
 }
 .navbar-nav .nav-item .nav-link .active {
   color: var(--chicken-yellow);
@@ -228,17 +253,133 @@ a.btn-outline-warning:hover {
   color: var(--spicy-red);
 }
 
+/*--------------------------------------------------------------
+# Social Section
+--------------------------------------------------------------*/
 section.social {
   background-color: var(--chicken-yellow);
 }
-
-
-
-.card {
-  transition: transform 0.3s;
+section.social .content .row img {
+  filter: grayscale(1) brightness(0.9);
+}
+@media (max-width: 576px) {
+  #socialcontent {
+    display: flex;
+    flex-direction: column;
+  }
+  section.social h3 {
+    font-size: 20px;
+  }
+  section.social a {
+    font-size: 16px;
+  }
 }
 
-.card:hover {
+/*--------------------------------------------------------------
+# Lokasi Section
+--------------------------------------------------------------*/
+section.lokasi .card {
+  transition: transform 0.3s;
+  border: solid 1px #ffc107;
+  box-shadow: 1px 1px 2px 1px #ffc107;
+}
+
+section.lokasi .card:hover {
   transform: scale(1.05);
   background-color: var(--chicken-yellow);
+}
+
+/*--------------------------------------------------------------
+# Galery Section
+--------------------------------------------------------------*/
+.galery .nav-tabs {
+  border: 0;
+}
+
+.galery .nav-link {
+  margin: 0 10px;
+  padding: 10px 5px;
+  transition: 0.3s;
+  color: var(--black);
+  border-radius: 0;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 2px solid #b6b6bf;
+}
+@media (max-width: 575px) {
+  .galery .nav-link {
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+}
+
+.galery .nav-link h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+@media (max-width: 575px) {
+  .galery .nav-link h4 {
+    font-size: 16px;
+  }
+}
+.galery .nav-link:hover {
+  color: var(--spicy-red);
+}
+
+.galery .nav-link.active {
+  color: var(--spicy-red);
+  border-color: var(--spicy-red);
+}
+.galery .tab-content .tab-header {
+  padding: 30px 0;
+}
+
+.galery .tab-content .tab-header p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #676775;
+  margin-bottom: 0;
+}
+
+.galery .tab-content .tab-header h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--spicy-red);
+}
+.galery iframe {
+  width: 326px;
+}
+.galery .feed {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------------
+# Hubungi Section
+--------------------------------------------------------------*/
+section.contact .card {
+  padding: 20px;
+  height: 100%;
+  border: none;
+}
+section.contact .card .card-icon {
+  background: var(--grilled-chicken-brown);
+  height: 80px;
+  width: 80px;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Utility Section
+--------------------------------------------------------------*/
+
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
