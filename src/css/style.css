@@ -253,6 +253,19 @@ a.btn-outline-warning:hover {
   color: var(--spicy-red);
 }
 
+
+section.serve{
+  margin: 50px 0px 80px 0px;
+}
+section.serve .desc{
+  margin-right: 20px;
+}
+
+section.serve .desc h3{
+  color: var(--spicy-red);
+}
+
+
 /*--------------------------------------------------------------
 # Social Section
 --------------------------------------------------------------*/
