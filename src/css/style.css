@@ -53,6 +53,14 @@ header.position-fixed .bottom-bar {
   background: #853312;
   font-size: 14px;
 }
+@media screen and (max-width: 576px) {
+  .top-bar .nav-link{
+    font-size: 10px;
+  }
+  .top-bar .nav-link i{
+    font-size: 10px;
+  }
+}
 
 .carousel-item img {
   height: 10%;
